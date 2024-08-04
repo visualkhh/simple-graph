@@ -53,7 +53,7 @@ export class Rect {
     this.lmargin = lmargin;
   }
 
-  public strokeRect(context: any, style: any) {
+  public strokeRect(context: CanvasRenderingContext2D, style?:  string | CanvasGradient | CanvasPattern) {
     var target_context	= undefined;
     if(context)
       target_context = context;
